@@ -11,9 +11,11 @@ neonDomain<- readOGR('data/NEONDomains')
 
 tickData <- read_csv('data/DomainSummaryData.csv')
 
-
 #This mutates sample year so that we can use it as a select input and filter for the 
 #user
+
+
+
 
 ui <- fluidPage(
     
@@ -86,6 +88,7 @@ ui <- fluidPage(
         )
     )
 )
+
 
 server <- function(input, output, session) {
     
